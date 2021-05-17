@@ -1,0 +1,123 @@
+/*Présentation générale spécificité mobile*/
+/*1 RESPONSIVE MOBILE FIRST*/
+/*2 RESPONSIVE AUTRE TAILLE*/
+/*2-1 Responsive tablette*/
+/*2-2 Responsive Destop*/
+
+/*1 RESPONSIVE MOBILE FIRST*/
+body
+{
+	background-color: #3CC0FF;
+	margin:10px;
+	font-family:Arial,'Times New Roman';
+}
+h1
+{
+	color:#FAA02D;
+	font-family: Arial;
+}
+h3
+{
+	font-size: 1.3em;
+}
+h4{
+	font-size:1.2em;
+}
+
+
+/*2 RESPONSIVE AUTRE TAILLE*/
+/*2-1 Responsive tablette*/
+@media only screen and (min-width:600px){
+	header,footer
+	{
+		background-color: #33d1ff;
+		margin: 30PX;
+		margin-right: 60PX;
+	}
+	body
+	{
+		background-color: #CBADFA ;
+		margin:25px;
+	}
+	h1
+	{
+		font-size: 35px;
+	}
+	h2
+	{
+		text-decoration: underline #E0D90B;
+		font-size: 30px;
+	}
+	p
+	{
+		font-size: 20px;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	.content
+	{
+		display:inline-flex;
+		width: 100%;
+		padding:25px;
+		justify-content: space-around;
+	}
+	.col-gauche
+	{
+		display:flex;
+		flex-direction: column;
+		text-align: center;
+		width:100%;
+		margin:25px;
+	}
+	.col-droite
+	{
+		display:flex;
+		flex-direction: column;
+		width: 100%;
+		margin:25px;
+	}
+	.img-responsive
+	{
+		display: block;
+    	width: 250px;
+    	height:250px;
+    	border-radius: 50%;
+    	margin:40px 30px 20px 30px;
+    	border :3px black solid;
+    	max-width: 100%;
+	}
+	i
+	{
+		font-size: 20px;
+		border-top:3px solid #E0D90B;
+		border-bottom:3px solid #E0D90B;
+	}
+	.fa-dog, .fa-cat,.fa-tree, .fa-walking, .fa-gamepad, .fa-car
+	{
+		border:2px solid #E0D90B;
+		padding-top: 6px;
+		padding-right: 3px;
+		padding-left: 3px;
+	}
+}
+/*2-2 Responsive Destop*/
+@media only screen and (min-width:1024px){
+	body
+	{
+		background-color:#2DFA4C;
+		margin:35px;
+	}
+	h1
+	{
+		font-size: 45px;
+	}
+	h2
+	{
+		font-size: 35px;
+	}
+	p
+	{
+		font-size: 23px;
+	}
+}
+
+
